@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+
+<!--
+	'Sam Boyd's Custom Made Surfboards' website is for educational purpouse only.
+    
+    Author:			Samir Vora
+    Student ID:		11020070
+    Tools Used:		HTML5, CSS3, JavaScript and Adobe Photoshop
+-->
+
+
+<html lang="en">
+
+	<head>
+	
+		<meta charset="utf-8" />
+		
+		<title>Sam Boyd's | About Sam</title>
+		
+		<!-- Aquire the JQuery library to enable PrettyPhoto to function. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="prettyphoto/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" />
+		<script src="prettyphoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- Stylesheets for the whole page. -->
+		<link rel="stylesheet" href="css/Reset.css" />
+		<link rel="stylesheet" href="css/templateCSS.css" />
+		<link rel="stylesheet" href="css/aboutsamCSS.css" />
+		<link rel="stylesheet" href="css/aboutsam-media.css" />
+		
+	</head>
+	
+	
+	<body id="top">
+	
+	
+		<!-- The wrapper will contain all the elements which need to be center aligned. -->
+		<div class="wrapper">
+		
+		
+			<!-- The header contains the nav, search button, the logo, main heading titles, and contact details. -->
+			<header id="page_header">
+			
+				<img id="logo" src="images/tropical.png" title="Sam Boyd's" alt="Sam Boyd's logo" />
+				
+				
+				<hgroup>
+				
+					<h1 id="main_heading">SAM BOYD'S</h1>
+					
+					<h2 id="sub_heading">CORNISH SURF ACADEMY AND CUSTOM-MADE SURFBOARDS</h2> 
+					
+				</hgroup>
+				
+				
+				<div id="header_contacts">
+				
+					<p id="header_tel"> Tel: ++44 117 123 4567 </p> 
+					
+					<p id="header_email"> e-mail: <a class="hover" href="#"> sam@boydsboards.com </a></p>
+					
+				</div>
+				
+				
+				<!-- Div containing the search box. -->
+				<div id="search_container">
+				
+					<!-- A placeholder atribute is used to display a temporary message. -->
+					<input id="search_box" type="text" placeholder="Search Our Site..." />
+					
+					<a id="search_button" href="index.html">SEARCH</a>
+					
+					<img id="flower" src="images/flower_small.png" alt="white flower" />
+					
+				</div>
+				
+				
+				<!--Nav starts here. -->
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a id="current_page" href="aboutsam.html">About Sam</a>
+						</li>
+						<li class="dropdown">
+							<a href="#">Boards<span class="triangle"></span></a>
+							<!-- This Ul tag will enable a drop-down list to appear when the user hovers over the Boards option on this navigation. -->
+							<ul>
+								<li><a href="#">Foam Boards</a></li>
+								<li><a href="#">Funboards</a></li>
+								<li><a href="#">Shortboards</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Fins<span class="triangle"></span></a>
+							<!-- This Ul tag will enable a drop-down list to appear when the user hovers over the Fins option on this navigation. -->
+							<ul>
+								<li><a href="#">Dakine</a></li>
+								<li><a href="#">Northcore</a></li>
+								<li><a href="#">Raptor</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="news.html">News</a>
+						</li>
+						<li>
+							<a href="#">Gallery</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				<!-- end of nav -->
+				</nav>
+
+				
+			<!-- End of header. -->	
+			</header>
+
+			
+			<div id="breadcrumbs">You Are Here &raquo; 
+				<a class="hover" href="#">Home</a> 
+				&raquo; 
+				<a href="#">About Sam</a> 
+				&raquo; 
+			</div>
+			
+			
+			<!-- The heading describing the content witin this webpage. -->
+			<h3 id="page_heading">Learn More About Sam Boyd's...</h3>			
+			
+
+			<!-- The container for the main contents of the webpage starts here. -->
+			<div id="main_content_container">
+			
+			
+				<!-- The top_contents_container div contains the Sam Boyd and Tom Lee profiles, and the information about the academy. -->
+				<div id="top_contents_container">
+				
+				
+					<!--Profiles of Sam Boyd and Tom Lee starts here. -->
+					<div id="profiles">
+					
+					
+						<!-- Article for Sam Boyd. -->
+						<article id="sam_profile_container">
+						
+							<a class="prettyPhoto" href="images/tutors_full/sam_full.png">
+							
+								<img id="sam-img" src="images/tutors_thumb/sam_thumb.png" alt="Sam Boyd" title="Sam Boyd" />
+								
+							</a>
+							
+							<h4 class="profile_title">Sam Boyd</h4>
+							
+							
+							<p class="description">
+								Sam Boyd was born in Bude, Cornwall, 1986 where he learned to surf at the age of 9. Ever 
+								since he was a child, his parents used to take him to their local beach and became fascinated
+								in surfing from watching others.
+							</p>
+							
+						</article>	
+
+						
+						<!-- Article for Tom Lee. -->	
+						<article id="tom_profile_container">
+						
+							<a  class="prettyPhoto" href="images/tutors_full/tom_full.png">
+							
+								<img id="tom-img" src="images/tutors_thumb/tom_thumb.png" alt="Tome Lee - Co-founder of Sam Boyd's" title="Tom Lee - co-founder of Sam Boyd's" />
+								
+							</a>			
+							
+							<h4 class="profile_title">Tom Lee</h4>
+							
+							<p class="description">
+								Tom Lee is one of the co-founders of Sam Boyd's surf academy from back in 2005. He met Sam on
+								one of the beaches in Cornwall. At the time he was backpacking across Europe, trying to ride as 
+								many waves as possible.
+							</p>
+							
+						</article>
+						
+						
+					<!--Profiles div ends here. -->	
+					</div>
+					
+					
+					<!--Div containing information about the surf academy. --> 
+					<div id="surf_academy_container">
+					
+					
+						<section id="surf_academy">
+						
+							<h4 id="academy_title">Surfing At Sam Boyd's</h4>
+							
+							<p class="academy_description">
+								Sam Boyd's surf academy was founded by Sam Boyd and Tom Lee in 2005 on the beaches of Bude Cornwall
+								where he and Tom taught students in the fine art of surfing, and built the academy to what
+								it is today from their hard work and dedication. 
+							</p>
+							
+							<p class="academy_description">
+								Sam then decided to learn to create custom surfboards so that he could give back to the surfing community 
+								what they have given to him.
+							</p>
+							
+							<a class="prettyPhoto" href="http://www.youtube.com/watch?v=DuZ0KOavbKc">
+								<img class="academy-img" src="images/about_thumbnails/school.png" alt="surfing classes" title="One of many surfing classes" />
+							</a>
+							
+							<a class="prettyPhoto" href="http://www.youtube.com/watch?v=d9Lly3VMW_A">
+								<img class="academy-img" src="images/about_thumbnails/surfboard_making.png" alt="How to make a surfboard" title="How surfboards are made" />
+							</a>
+							
+						</section>
+						
+						
+					<!-- surf_academy_container div ends -->	
+					</div>
+
+					
+				<!--end of top_contents_container -->	
+				</div>
+				
+				
+				<!-- This div contains the profile images and the CSS rollover tooltip of the surfin tutors. -->
+				<div id="tutor_container">
+					
+					
+					<section id="tutor_profiles">
+					
+						<h4 id="tutor_heading">Our Surfing Tutors</h4>
+						
+						<!-- Sam Boyd's profile. -->
+						<div class="tutor_profile_image">
+						
+							<a class="prettyPhoto" href="images/tutors_full/sam_full.png">
+							
+								<img class="tutor-img" src="images/tutors_thumb/sam_thumb.png" alt="Sam Boyd"/>
+								
+							</a>
+							
+							<!--Tooltip for Sam Boyd -->
+							<div class="tutor_tooltip">
+							
+								<p class="tutor_name">Sam Boyd</p>
+								
+								<p class="tutor_description"><span class="bold-17">Joined: </span>2005</p>
+								
+								<p class="tutor_description"><span class="bold-17">Favorite Maneuver: </span>Barrel Roll</p>
+								
+								<img class="board-img" src="images/board.png" alt="srufboard background"/>
+								
+							</div>
+							
+						<!-- Sam Boyd's profile ends -->	
+						</div>
+						
+						
+						<!-- Damien Hobgood's profile. -->
+						<div class="tutor_profile_image">
+							
+							<a class="prettyPhoto" href="images/tutors_full/damien_full.png">
+							
+								<img class="tutor-img" src="images/tutors_thumb/damien_thumb.png" alt="Damien Hobgood"/>
+								
+							</a>
+							
+							<!--Tooltip for Damien Hobgood -->
+							<div class="tutor_tooltip">
+							
+								<p class="tutor_name">Damien Hobgood</p>
+								
+								<p class="tutor_description"><span class="bold-17">Joined: </span>2006</p>
+								
+								<p class="tutor_description"><span class="bold-17">Favorite Maneuver: </span>Air Twist</p>
+								
+								<img class="board-img" src="images/board.png" alt="srufboard background"/>
+								
+							</div>
+							
+						<!-- Damien Hobgood's profile ends -->	
+						</div>
+						
+						
+						<!-- Jordy Smith's profile. -->
+						<div class="tutor_profile_image">
+						
+							<a class="prettyPhoto" href="images/tutors_full/jordy_full.png">
+							
+								<img class="tutor-img" src="images/tutors_thumb/jordey_thumb.png" alt="Jordy Smith"/>
+								
+							</a>
+							
+							<!--Tooltip for Jordy Smith -->
+							<div class="tutor_tooltip">
+							
+								<p class="tutor_name">Jordy Smith</p>
+								
+								<p class="tutor_description"><span class="bold-17">Joined: </span>2008</p>
+								
+								<p class="tutor_description"><span class="bold-17">Favorite Maneuver: </span>Barrel Roll</p>
+								
+								<img class="board-img" src="images/board.png" alt="srufboard background"/>
+								
+							</div>
+						
+						<!-- Jordy Smith's profile ends. -->
+						</div>
+						
+						
+						<!-- Knox Taylor's profile. -->
+						<div class="tutor_profile_image">
+						
+							<a class="prettyPhoto" href="images/tutors_full/knox_full.png"><img class="tutor-img" src="images/tutors_thumb/knox_thumb.png" alt="Knox Taylor"/></a>
+							
+							<!--Tooltip for Knox Taylor -->
+							<div class="tutor_tooltip">
+							
+								<p class="tutor_name">Knox Taylor</p>
+								
+								<p class="tutor_description"><span class="bold-17">Joined: </span>2010</p>
+								
+								<p class="tutor_description"><span class="bold-17">Favorite Maneuver: </span>Carves</p>
+								
+								<img class="board-img" src="images/board.png" alt="srufboard background"/>
+								
+							</div>
+							
+						<!-- Knox Taylor's profile ends. -->	
+						</div>
+						
+						
+						<p id="note"><span>Note:</span> Hover over the tutor pictures to read their description.</p>
+						
+						
+					<!-- End of tutor_profiles Section tag. --> 	
+					</section>
+					
+					
+				<!-- end of tutor_container -->	
+				</div>
+				
+				
+			<!-- end of main_content_container. -->	
+			</div>
+			
+			
+		<!-- end of the wrapper div -->
+		</div>
+		
+		
+		<!-- By not placing the 'Footer' within a wrapper enables the 'Footer' to expand 100% horizontally. -->
+		<footer>
+		
+		
+			<!-- These divs are used to show the stripes on the top border of the footer. --> 
+			<div id="topOver" class="stripes"></div>
+			
+			<div id="topUnder" class="stripes"></div>
+			
+			
+			<!-- Thw wrapper starts here. -->
+			<div id="footer_container" class="wrapper">
+				
+				<section id="footer_blog" class="footer_content">
+				
+					<h5 class="footer_content_heading">Boydwax - a Boardmaker's Blog</h5>
+					
+					<!--The feed of the RSS Blog from a surfing website -->
+					<script type="text/javascript" src="http://output68.rssinclude.com/output?type=js&amp;id=620727&amp;hash=478f3b27f527b7c913a8ef5ff9075e35"></script>	
+					
+				</section>
+			
+			
+				<section id="footer_social" class="footer_content">
+				
+					<h5 class="footer_content_heading" >Let's get together...</h5>
+					
+					<p id="text">We all are social animals, and so is Sam. Come and follow him on Facebook, Twitter, LinkedIn and more...</p>
+					
+					<a href="http://www.facebook.com"><img class="social-img" src="images/social/facebook.png" alt="Facebook widget" title="Facebook" /></a>
+					
+					<a href="http://www.twitter.com"><img class="social-img" src="images/social/twitter.png" alt="Twitter widget" title="Twitter" /></a>
+					
+					<a href="http://www.flickr.com"><img class="social-img" src="images/social/flickr.png" alt="Flickr widget" title="Flickr" /></a>
+					
+					<a href="http://www.linkedin.com"><img class="social-img" src="images/social/in.png" alt="LinkedIn widget" title="LinkedIn" /></a>
+					
+					<a href="http://www.youtube.com"><img class="social-img" src="images/social/youtube.png" alt="YouTube widget" title="YouTube" /></a>
+					
+				</section>
+			
+			
+				<section id="footer_trip">
+				
+					<h5 class="footer_content_heading">Sam's Ultimate Surf Trip</h5>
+					
+					<!-- The reason why I have not put all the images on a new line to identify that it is nested inside the a tag was because an underscore appeared next to te image when I did that. -->
+					<a href="images/footer_full/surfer_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/surfer_thumb.png" alt="Sam Boyd surfing" title="Sam Boyd showing his surfing skills" /></a>
+					
+					<a href="images/footer_full/wave_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/wave_thumb.png" alt="Ocean waves" title="One of many waves that can be surfed upon" /></a>
+					
+					<a href="images/footer_full/flower_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/flower_thumb.png" alt="Habiscus Flower" title="The Hibiscus Flower of destiny" /></a>
+					
+					<a href="images/footer_full/running_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/running_thumb.png" alt="Surfers at a beach" title="Surfers enjoying the tides at a near by beach" /></a>
+				
+				</section>
+				
+
+			<!-- end of wrapper. -->
+			</div>
+			
+			
+			<!--These divs are used to show the stripes on the bottom border of the footer--> 
+			<div id="bottomOver" class="stripes"></div>
+			<div id="bottomUnder" class="stripes"></div>
+	
+	
+		<!-- End of footer. -->	
+		</footer>
+	
+	
+		<div class="wrapper">
+		
+		
+			<div id="credits">
+			
+				<p class="credits_text">Copyright &copy; 2013 - All Rights Reserved - <a class="hover" href="#">www.boydsboards.com</a></p>
+				
+				<p class="credits_text">Designed by <a class="hover" href="#">11020070</a></p>
+				
+				<a id="back-to-top" href="#"><img src="images/up.gif" alt="back to top button" /></a>
+				
+			</div>
+			
+			<!--This div contains the image showing html structure of the page, and the assignment report. -->
+			<div id="htmlOutline_report">
+			
+				<a id="html_outline" class="hover" href="images/screen_map.png">HTML outline image</a>
+				
+				<a id="report" class="hover" href="../report1/">Assignment Report</a>
+				
+				<a id="download" class="hover" href="11020070%20-%20SamBoydReport.docx">Download Assignment Report</a>
+				
+			</div>
+			
+			
+		<!-- End of wrapper. -->	
+		</div>
+		
+		
+		<!-- This script enables the PrettyPhoto lightbox to activate when clicking on an image with the class 'pretyPhoto'. -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("a[class^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		
+	</body>
+	
+	
+</html>

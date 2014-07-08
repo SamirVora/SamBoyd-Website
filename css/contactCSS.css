@@ -1,0 +1,264 @@
+/* Styles the container which will hold all the main content of this web page. */
+div#main_content_container{
+	margin: 20px 40px 40px 40px;
+	padding: 30px 0px;
+	background: #ffffff;
+	border: 1px solid #636876;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.75);
+	box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.75);	
+}
+
+div.container{
+	margin: 0px 40px 2px 40px;
+	padding: 10px 0px;
+	border-top: 1px solid #9499A3;
+	border-bottom: 1px solid #9499A3;
+}
+
+div.container:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+section.content:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+
+
+/* The following styles are for the hcard address container. */
+
+section#address_container{
+	width:340px;
+	display:inline-block;
+	float:left;
+}
+
+h4#address_container_title{
+	text-align:center;
+	width:240px;
+}
+
+h4.heading{
+	margin:10px auto;
+	font: bolder 30px Hamburger-Heaven;
+}
+
+/* Make the text's width 100% so that it centers correctly within its container. */
+p.text{
+	width:100%;
+	padding-bottom:20px;
+	font:17px Arial;
+	text-align:center;
+	line-height:21px;
+}
+
+/* This style on the vcard creates the thick border around itself, as well as setting the padding, font style and border-radius. */
+div.vcard{
+	width:300px;
+	padding:20px 0px 15px 20px;
+	font:17px Calibri;
+	border: 10px solid #E8E8E8;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.75) inset;
+	-moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.75) inset;
+	box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.75) inset;
+}
+
+div.vcard:hover{
+	-webkit-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75) inset;
+	-moz-box-shadow:    0px 0px 20px rgba(50, 50, 50, 0.75) inset;
+	box-shadow:         0px 0px 20px rgba(50, 50, 50, 0.75) inset;
+	-webkit-transition: padding, box-shadow , border-color, border-radius, .5s;
+    -moz-transition: padding .5s, box-shadow .5s;
+    transition: padding, box-shadow, .5s;
+}
+
+a.fn{
+	margin-bottom:5px;
+	font: 18px Arial;
+}
+
+div.adr{
+	margin-bottom:5px;
+}
+
+
+
+/* The following styles are for the contact form. */
+
+section#form_container{
+	width:400px;
+	display:inline-block;
+	float:right;
+}
+
+h4#contact_container_title{
+	text-align:center;
+	width:240px;
+}
+
+#user_form{
+	width:340px;
+	padding:20px;
+	border: 10px solid #E8E8E8;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.75) inset;
+	-moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.75) inset;
+	box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.75) inset;
+}
+
+#user_form:hover{
+	-webkit-box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75) inset;
+	-moz-box-shadow:    0px 0px 20px rgba(50, 50, 50, 0.75) inset;
+	box-shadow:         0px 0px 20px rgba(50, 50, 50, 0.75) inset;
+	-webkit-transition: padding, box-shadow, .5s;
+    -moz-transition: padding .5s, box-shadow .5s;
+    transition: padding, box-shadow, .5s;
+}
+
+p.input_title{
+	margin:0px 20px 20px 0px;
+	display:inline-block;
+	font:bold 14px Arial;
+	letter-spacing:1px;
+	vertical-align:top;
+}
+
+p#last_name{
+	margin-right:23px;
+}
+
+p#user_e-mail{
+	margin-right:13px;
+}
+
+p#message{
+	margin-right: 35px;
+}
+
+input.input_box{
+	padding:2px 2px 2px 4px;
+	background:#f9f9f9;
+	border-radius:3px;
+	font: 15px Calibri;
+}
+
+textarea.input_box{
+	width:200px;
+	height:80px;
+	padding:2px 2px 2px 4px;
+	background:#f9f9f9;
+	font: 15px Calibri;
+	border:none;
+	border-radius:3px;
+	-webkit-box-shadow: 2px 2px 0px rgba(154, 154, 154, 0.75) inset;
+	-moz-box-shadow:    2px 2px 0px rgba(154, 154, 154, 0.75) inset;
+	box-shadow:         2px 2px 0px rgba(154, 154, 154, 0.75) inset;
+}
+
+button#submit_button{
+	width: 100px;
+	height: 40px;
+	margin: 10px 0px 0px 120px;
+	font:  16px Calibri;
+	background: #ededed;
+	background: linear-gradient(180deg, rgba(20, 40, 220, 1) 10%, rgb(90, 140, 250) 100%);
+	background: -moz-linear-gradient(90deg, rgba(204, 204, 204, 1) 10%, rgb(255, 255, 255) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(204, 204, 204, 1) 10%, rgb(255, 255, 255) 100%);
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+
+button#submit_button:hover{
+	background: linear-gradient(180deg, rgb(90, 140, 250) 5%, rgba(20, 40, 220, 1) 100%);
+	background: -moz-linear-gradient(90deg,  rgb(255, 255, 255) 5%, rgba(204, 204, 204, 1) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 5%, rgba(204, 204, 204, 1) 100%);
+}
+
+span.asterisk_red{
+	color:#FF0000;
+}
+
+
+
+/* These styles are for the 'Note' sentence underneath the contact form. */
+
+div#note{
+	width:500px;
+	margin:5px 0px 2px 0px;
+	font:18px Calibri;
+	float:left;
+}
+
+div#note > span:first-child{
+	font:bold 18px Arial;
+}
+
+div#note > span.asterisk_red:nth-child(2){
+	font-size:25px;
+}
+
+
+
+/* These styles are for the Map section of this webpage. */
+
+div#map_info_container{
+	width:350px;
+	float:left;
+}
+
+h4#find_us_title{
+	text-align:center;
+	width:100px;
+}
+
+p#open_time_title{
+	width:140px;
+	margin:0px auto;
+	padding-bottom:10px;
+	font:bold 18px Arial;
+}
+
+/* I added a linear gradient to this div so that the user's eyes are esily able to follow the days and times from left to right of the div. */
+div#opening_times{
+	width: 250px;
+	height: 164px;
+	margin-left: 40px;
+	padding: 5px;
+	background-size: 1px 50px;
+	font: 16px Arial;
+	border:1px solid #000000;
+	border-radius: 3px;
+	background-image: linear-gradient(rgba(100, 154, 167, .50) 50%, transparent 50%, transparent);
+	background-image: -webkit-linear-gradient(rgba(100, 154, 167, .50) 50%, transparent 50%, transparent);
+	background-image: -moz-linear-gradient(rgba(100, 154, 167, .50) 50%, transparent 50%, transparent);
+}
+
+p.day{
+	padding:0px 80px 5px 0px;
+	float:left;
+}
+
+p.time{
+	float:right;
+}
+
+iframe#map{
+	width:430px;
+	height:250px;
+	margin-top:80px;
+	float:right;
+}

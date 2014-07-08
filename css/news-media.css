@@ -1,0 +1,113 @@
+/* This will set Sam Boyd's trip images in a group of four when min-width is 910px and max-width is 999px. */
+@media screen and (min-width:910px) and (max-width:999px){
+	
+	section#footer_social{
+		margin: 0px 20px;
+	}
+	
+ 	section#footer_trip{
+		width:300px;
+		margin:0px;
+	}
+}
+
+
+/* These are the styles which will be applied when the browser size reaches 999px, one pixel less than the maximum content width set on the wrapper. */
+@media screen and (max-width: 999px){
+
+/* These are the styles for the header of the page. */
+
+	img#logo{
+		display:none;
+	}
+
+	hgroup{
+		margin-bottom:40px;
+	}
+
+	div#search_container{
+		margin-top:15px;
+	}
+
+	p#header_tel{
+		display:block;
+		border-right:none;
+	}
+
+	p#header_email{
+		display:block;
+	}
+	
+	nav{
+		margin-top:120px;
+	}
+
+	
+	
+	/* The following styles are for the main content of Sam Boyd's News page. For the fluid layout on this page, I wanted to center align all elements
+			and place them in their own blocks, one after the other. */
+			
+	div.news_container{
+		margin-bottom:10px;
+		float:none;
+	}
+
+	h4.news_title{
+		font-size:40px;
+		text-align:center;	
+	}
+
+	p.news_paragraph {
+		width:auto;
+		font-size:16px;
+	}
+	
+	a.more_info{
+		margin:0px auto;
+		font-size:15px;
+		font-weight:bold;
+	}
+	
+	/* Increase the size of the news image because there is much more space now. */
+	img.news_image{
+		width: 400px;
+		height: 350px;
+		display: block;
+		margin: 18px auto;
+		float: none;
+	}
+	
+	img.news_image:hover{
+		margin: 20px auto;
+		margin-bottom:25px;
+	}
+	
+	
+	
+	/* The following styles are for the footer of Sam Boyd's Contact page. */
+
+	div#footer_container{
+		width:200px;
+		margin:0px auto;
+	}
+
+	section#footer_blog{
+		margin-left: 40px;
+	}
+
+	section#footer_social{
+		margin-left: 90px;
+	}
+	
+	/* This will make Sam Boyd's Trip images form in a line next to each other. */
+	section#footer_trip{
+		width: auto;
+		margin:-20px 0px 20px 40px;
+	}
+	
+	img.trip-img:hover{
+		margin-bottom:10px;
+	}
+	
+/* End of media: max-width: 999px */	
+}

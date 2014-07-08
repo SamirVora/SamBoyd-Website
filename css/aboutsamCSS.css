@@ -1,0 +1,250 @@
+div#main_content_container{
+	margin: 20px 40px 40px 40px;
+	padding: 30px 0px;
+	background: #ffffff;
+	border: 1px solid #636876;
+	-webkit-box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.75);
+	box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.75);	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+div#top_contents_container{
+	display:block;
+}
+
+div#top_contents_container:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+div#profiles{
+	margin: 20px 40px 0px 0px;
+	border-top: 1px solid #9499A3;
+	float: right;
+}
+
+/* The following styles are for the Sam Boyd profile content. */
+
+article#sam_profile_container{
+	margin-top: 2px;
+	padding: 20px 0px;
+	border-bottom: 1px solid #9499A3;
+}
+
+img#sam-img, img#tom-img{
+	width: 180px;
+	height: 150px;
+	margin-left: 35px;
+	padding: 5px;
+	border: 10px solid #E8E8E8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+img#sam-img:hover, img#tom-img:hover{
+	margin: 5px 5px 5px 40px;
+	padding: 0px;
+	border-color: #aa4235;
+	-webkit-transition: padding, border-color, .2s;
+    -moz-transition: margin .2s, padding .2s, border-color .2s;
+	transition: padding, border-color, .2s;
+}
+
+h4.profile_title{
+	margin: 5px 0px 5px 10px;
+	font: 30px Hamburger-Heaven;
+	text-align:center;
+}
+
+p.description{
+	width: 270px;
+	font: 17px Calibri;
+	line-height: 23px;
+	text-align:justify;
+}
+
+
+/* The following styles are for the Academy profile content. */
+
+article#tom_profile_container{
+	padding: 20px 0px;
+}
+
+
+/* The following styles are for the Surfing At Sam Boyd's content. */
+
+div#surf_academy_container{
+	width: 558px;
+	margin-left: 40px;
+	padding: 20px 10px;
+	display: block;	
+}
+
+section#surf_academy{
+	border-top: 1px solid #9499A3;		
+}
+
+h4#academy_title{
+	margin: 10px 0px;
+	font: 40px Hamburger-Heaven;
+	text-align: center;
+}
+
+p.academy_description{
+	margin: 0px 60px 20px 0px;
+	font: 17px Calibri;
+	line-height: 23px;
+	text-align: justify;
+}
+
+img.academy-img{
+	width: 300px;
+	height: 200px;
+	margin: 0px 0px 20px 90px;
+	padding: 5px;
+	border: 10px solid #E8E8E8;
+}
+
+img.academy-img:hover{
+	margin: 5px 5px 25px 95px;
+	padding: 0px;
+	border-color: #aa4235;
+	-webkit-transition: padding, border-color, border-radius, .2s;
+    -moz-transition: margin .2s, padding .2s, border-color .2s, border-radius .2s;
+	transition: padding, border-color, border-radius, .2s;
+}
+
+
+/* The following styles are for the surfing tutors section. */
+
+div#tutor_container{
+	margin: 0px 40px 2px 40px;	
+}
+
+section#tutor_profiles{
+	padding: 20px 0px;
+	border-top: 1px solid #9499A3;		
+	border-bottom: 1px solid #9499A3;	
+}
+
+/* Clear fix for floats inside section.content. */
+section#tutor_profiles:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+
+/* The following styles are for the surfing tutor's images and rollover tooltips. */
+
+h4#tutor_heading{
+	font: 35px Hamburger-Heaven;
+	text-align: center;
+}
+
+div.tutor_profile_image{
+	display: inline-block;
+	position: relative;
+}
+
+img.tutor-img{
+	width: 165px;
+	height: 130px;
+	margin: 15px 0px 0px 10px;
+	padding: 5px;
+	border: 10px solid #E8E8E8;
+}
+
+img.tutor-img:hover{
+	width: 175px;
+	height: 140px;
+	padding: 0px;
+	border-color: #aa4235;
+	-webkit-transition: padding, border-color, border-radius, .2s;
+    -moz-transition: width .2s, height .2s, padding .2s, border-color .2s, border-radius .2s;
+	transition: padding, border-color, border-radius, .2s;
+}
+
+div.tutor_tooltip{
+	width: 300px;
+	padding: 10px;
+	opacity: 0;
+	visibility:hidden;
+	position:relative;
+	position: absolute;
+	top: -150px;
+	left: -50px;
+	font:16px Calibri;
+	z-index:25;
+}
+
+/* Z-index is used to position the surf board image underneath the text fields. */
+img.board-img{
+	width:520px;
+	height:135px;
+	position: absolute;
+	top:5px;
+	left:-110px;
+	z-index:-1;
+}
+
+/* The rollover tooltip will appear when the user hovers over one of the tutor's image.
+	Since the tooltip is position absolute, it will not cause other elements around it to
+	shuffle. */
+div.tutor_profile_image:hover > div.tutor_tooltip{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition:visibility, opacity, .5s;
+	-moz-transition: visibility .5s, opacity .5s;
+	transition: visibility, opacity, 0.2s;
+}
+
+p.tutor_name{
+	margin: 4px 0px;
+	font: bold 30px Hamburger-Heaven;
+	text-shadow: 1px 1px 10px rgba(150, 150, 150, 1);
+	text-align: center;
+}
+
+p.tutor_description{
+	margin: 0px 0px 2px 20px;
+	padding:0px 10px;
+	background-size: 1px 50px;
+	font:  19px Calibri;
+	text-align: right;
+	border-bottom: 3px solid #96c0c9;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+div.tutor_tooltip > p.tutor_description:nth-child(3){
+	padding-top:3px;
+	border-top: 3px solid #96c0c9;
+	border-bottom:none;
+}
+
+span.bold-17{
+	font: bold 17px Arial;
+	float: left;
+}
+
+
+/* The following styles are for the 'Note' sentence underneath the tutor's profile images. */ 
+
+p#note{
+	width: 500px;
+	padding: 20px 0px 10px 0px;
+	font: 18px Calibri;
+	float: left;
+}
+
+p#note > span:first-child{
+	color: #aa4235;
+	font: bold 18px Arial;
+}

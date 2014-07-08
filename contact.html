@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+
+<!--
+	'Sam Boyd's Custom Made Surfboards' website is for educational purpouse only.
+    
+    Author:			Samir Vora
+    Student ID:		11020070
+    Tools Used:		HTML5, CSS3, JavaScript and Adobe Photoshop
+-->
+
+<html lang="en">
+
+	<head>
+	
+		<meta charset="utf-8" />
+		
+		<title>Sam Boyd's | Contact</title>
+		
+		<!-- Javascript and CSS for the PretyPhoto lightbox. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="prettyphoto/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet"/>
+		<script src="prettyphoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- Stylesheets for the whole page. -->
+		<link rel="stylesheet" href="css/Reset.css" />		
+		<link rel="stylesheet" href="css/templateCSS.css" />
+		<link rel="stylesheet" href="css/contactCSS.css" />
+		<link rel="stylesheet" href="css/contact-media.css" />
+		
+		<!--Javascript file to validate the contact form -->
+		<script type="text/javascript" src="js/formvalidation.js"></script>
+		
+	</head>
+
+	
+	<body id="top">
+	
+		
+		<!-- The wrapper will contain all the elements which need to be center aligned. -->
+		<div class="wrapper">
+		
+		
+			<header id="page_header">
+			
+				<img id="logo" src="images/tropical.png" title="Sam Boyd's" alt="Sam Boyd's logo" />
+				
+				
+				<!-- The Hgroup contains the main heading and the sub-heading of this webpage.-->
+				<hgroup>
+				
+					<h1 id="main_heading">SAM BOYD'S</h1>
+					
+					<h2 id="sub_heading">CORNISH SURF ACADEMY AND CUSTOM-MADE SURFBOARDS</h2> 
+					
+				</hgroup>
+				
+				
+				<div id="header_contacts">
+				
+					<p id="header_tel"> Tel: ++44 117 123 4567 </p> 
+					
+					<p id="header_email"> e-mail: <a class="hover" href="#"> sam@boydsboards.com </a></p>
+					
+				</div>
+				
+				
+				<!-- Div containing the search box. -->
+				<div id="search_container">
+				
+					<!-- A placeholder atribute is used to display a temporary message. -->
+					<input id="search_box" type="text" placeholder="Search Our Site..." />
+					
+					<a id="search_button" href="index.html">SEARCH</a>
+					
+					<img id="flower" src="images/flower_small.png" alt="white flower" />	
+					
+				</div>
+				
+				
+				<!--Nav starts here -->
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="aboutsam.html">About Sam</a>
+						</li>
+						<li class="dropdown">
+							<a href="#">Boards<span class="triangle"></span></a>
+							<!-- This Ul tag will enable a drop-down list to appear when the user hovers over the Boards option on this navigation. -->
+							<ul>
+								<li><a href="#">Foam Boards</a></li>
+								<li><a href="#">Funboards</a></li>
+								<li><a href="#">Shortboards</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">Fins<span class="triangle"></span></a>
+							<!-- This Ul tag will enable a drop-down list to appear when the user hovers over the Fins option on this navigation. -->
+							<ul>
+								<li><a href="#">Dakine</a></li>
+								<li><a href="#">Northcore</a></li>
+								<li><a href="#">Raptor</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="news.html">News</a>
+						</li>
+						<li>
+							<a href="#">Gallery</a>
+						</li>
+						<li>
+							<a id="current_page" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				<!--End of nav.-->	
+				</nav>
+				
+			
+			<!-- End of header. -->	
+			</header>
+
+			
+			<div id="breadcrumbs">You Are Here &raquo; 
+				<a class="hover" href="#">Home</a> 
+				&raquo; 
+				<a href="#">Contact</a> 
+				&raquo; 
+			</div>	
+			
+			
+			<h3 id="page_heading">Get in contact with Sam Boyd...</h3>
+			
+			
+			<!-- The container for the main contents of the webpage starts here. -->
+			<div id="main_content_container">
+				
+				
+				<!-- Div containing the H-card, and the contact form. -->
+				<div class="container">	
+				
+				
+					<!-- This Section tag displays the address of Sam Boyd's. -->
+					<section class="content" id="address_container">
+					
+					
+						<h4 id="address_container_title" class="heading">Visit Us</h4>
+						
+						<p class="text">Visit our surf academy at this address...</p>
+						
+						<!-- H-card starts here. -->
+						<div class="vcard">
+						
+							<a class="fn hover" href="www.boydsboards.com">Sam Boyd's</a>
+							
+							<div class="adr">
+							
+								<div class="street-address">6 Belle Vue</div>
+								
+								<span class="locality">Cornwall</span>
+								
+								<br/>
+								
+								<span class="postal-code">EX23 8BB</span>
+								
+								<br/>
+								
+								<span class="country-name">United Kingdom</span>
+								
+							</div>
+							
+							<span>E-mail: </span><a class="email hover" href="mailto:sam@boydsboards.com">sam@boydsboards.com</a>
+							
+							<div class="tel">Tel: ++44 117 123 4567</div>
+							
+						<!--end of H-card.-->
+						</div>
+						
+						
+					<!-- end of address_container -->	
+					</section>
+					
+				
+					<!-- Contact form starts here. -->
+					<section class="content" id="form_container">
+					
+					
+						<h4 id="contact_container_title" class="heading">Contact Sam Boyd's</h4>
+						
+						<p class="text">Or contact us by filling out the form bellow...</p>
+						
+						<!--The contact form is implemented here.-->
+						<form id="user_form" name="contactForm"  action="#" method="GET">
+						
+							<p id="first_name" class="input_title">First name <span class="asterisk_red">*</span></p>
+							
+							<input class="input_box" name="first_name" type="text"  placeholder="Joe" required/>
+							
+							<p id="last_name" class="input_title">Last name <span class="asterisk_red">*</span></p>
+							
+							<input class="input_box" name="last_name" type="text" placeholder="Bloggs" required/>
+							
+							<p id="user_e-mail" class="input_title">Your e-mail <span class="asterisk_red">*</span></p>
+							
+							<input class="input_box" name="user_email" type="email" required placeholder="Joe@JoeBloggs.com" pattern="[^ @]*@[^ @]*" />
+							
+							<p id="message" class="input_title">Message <span class="asterisk_red">*</span></p>
+							
+							<textarea class="input_box" name="message" required placeholder="Your message here..."></textarea>
+							
+							<button id="submit_button" type="submit" name="submit" onclick="return validateForm();">Submit</button>
+								
+						</form>
+						
+						
+					<!--Form container ends.-->
+					</section>
+					
+					
+					<div id="note">
+					
+						<span>Note:</span> Fields marked with <span class="asterisk_red">*</span> are mandatory, and must be filled in.
+						
+					</div>
+					
+					
+				<!-- end of container -->
+				</div>	
+				
+				
+				<!-- Start of container -->
+				<div class="container">
+					
+					
+					<!-- This section tag holds the Google Maps of Sam Boyd's Surf Academy. -->
+					<section class="content">
+					
+					
+						<!-- Map_info_container starts. -->
+						<div id="map_info_container">
+						
+						
+							<h4 id="find_us_title" class="heading">Find Us</h4>
+							
+							<p class="text">If you are out and about, then why not visit our surf academy?</p>
+							
+							<p id="open_time_title">Opening Times</p>
+							
+							<div id="opening_times">
+							
+							
+									<p class="day">Monday</p><p class="time">9am - 4pm</p>
+									
+									<p class="day">Tuesday</p><p class="time">9am - 5pm</p>
+									
+									<p class="day">Wednesday</p><p class="time">9am - 5pm</p>
+									
+									<p class="day">Thursday</p><p class="time">9am - 5pm</p>
+									
+									<p class="day">Firday</p><p class="time">9am - 5pm</p>
+									
+									<p class="day">Saturday</p><p class="time">9am - 4pm</p>
+									
+									<p class="day">Sunday</p><p class="time">9am - 3pm</p>
+							
+							
+							<!-- Opening times end -->
+							</div>
+							
+							
+						<!-- map_info_container ends -->	
+						</div>
+						
+						
+						<!-- An iframe containing the Google Maps for Sam Boyd's Surf Academy. -->
+						<iframe id="map" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=EX23+8BB+&amp;aq=&amp;sll=51.468489,-2.590709&amp;sspn=0.250228,0.617294&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Bude+EX23+8BB,+United+Kingdom&amp;ll=50.830786,-4.54383&amp;spn=0.001982,0.004823&amp;z=14&amp;output=embed"></iframe>
+					
+					
+					<!-- end of content -->
+					</section>
+					
+					
+				<!-- end of container -->	
+				</div>	
+				
+				
+			<!--Main content container end. -->	
+			</div>
+			
+			
+		<!--Wrapper end -->
+		</div>
+		
+		
+		<!-- By not placing the 'Footer' within a wrapper enables the 'Footer' to expand 100% horizontally. -->
+		<footer>
+		
+		
+			<!--These divs are used to show the stripes on the top border of the footer--> 
+			<div id="topOver" class="stripes"></div>
+			<div id="topUnder" class="stripes"></div>
+			
+			
+			<div id="footer_container" class="wrapper">
+				
+				
+				<section id="footer_blog" class="footer_content">
+				
+				
+					<h5 class="footer_content_heading">Boydwax - a Boardmaker's Blog</h5>
+					
+					<!--The feed of the RSS Blog from a surfing website -->
+					<script type="text/javascript" src="http://output68.rssinclude.com/output?type=js&amp;id=620727&amp;hash=478f3b27f527b7c913a8ef5ff9075e35"></script>	
+					
+					
+				</section>
+			
+			
+				<section id="footer_social" class="footer_content">
+				
+				
+					<h5 class="footer_content_heading" >Let's get together...</h5>
+					
+					<p id="text">We all are social animals, and so is Sam. Come and follow him on Facebook, Twitter, LinkedIn and more...</p>
+					
+					<a href="http://www.facebook.com"><img class="social-img" src="images/social/facebook.png" alt="Facebook widget" title="Facebook" /></a>
+					
+					<a href="http://www.twitter.com"><img class="social-img" src="images/social/twitter.png" alt="Twitter widget" title="Twitter" /></a>
+					
+					<a href="http://www.flickr.com"><img class="social-img" src="images/social/flickr.png" alt="Flickr widget" title="Flickr" /></a>
+					
+					<a href="http://www.linkedin.com"><img class="social-img" src="images/social/in.png" alt="LinkedIn widget" title="LinkedIn" /></a>
+					
+					<a href="http://www.youtube.com"><img class="social-img" src="images/social/youtube.png" alt="YouTube widget" title="YouTube" /></a>
+					
+					
+				</section>
+				
+			
+				<section id="footer_trip">
+				
+				
+					<h5 class="footer_content_heading">Sam's Ultimate Surf Trip</h5>
+					
+					<a href="images/footer_full/surfer_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/surfer_thumb.png" alt="Sam Boyd surfing" title="Sam Boyd showing his surfing skills" /></a>
+					
+					<a href="images/footer_full/wave_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/wave_thumb.png" alt="Ocean waves" title="One of many waves that can be surfed upon" /></a>
+					
+					<a href="images/footer_full/flower_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/flower_thumb.png" alt="Habiscus Flower" title="The Hibiscus Flower of destiny" /></a>
+				
+					<a href="images/footer_full/running_full.png" class="prettyPhoto"><img class="trip-img" src="images/footer_thumbnails/running_thumb.png" alt="Surfers at a beach" title="Surfers enjoying the tides at a near by beach" /></a>
+				
+				
+				</section>
+				
+
+			<!-- end of wrapper -->
+			</div>
+			
+			
+			<!--These divs are used to show the stripes on the bottom border of the footer--> 
+			<div id="bottomOver" class="stripes"></div>
+			<div id="bottomUnder" class="stripes"></div>
+			
+			
+		</footer>
+		
+		
+		<!-- Far bottom footer wrapper begins -->
+		<div class="wrapper">
+		
+		
+			<div id="credits">
+			
+				<p class="credits_text">Copyright &copy; 2013 - All Rights Reserved - <a class="hover" href="#">www.boydsboards.com</a></p>
+				
+				<p class="credits_text">Designed by <a class="hover" href="#">11020070</a></p>
+				
+				<a id="back-to-top" href="#"><img src="images/up.gif" alt="back to top button" /></a>
+				
+			</div>
+			
+			
+			<!--This div contains the image showing html structure of the page, and the assignment report. -->
+			<div id="htmlOutline_report">
+			
+				<a id="html_outline" class="hover" href="images/screen_map.png">HTML outline image</a>
+				
+				<a id="report" class="hover" href="../report1/">Assignment Report</a>
+				
+				<a id="download" class="hover" href="11020070%20-%20SamBoydReport.docx">Download Assignment Report</a>
+				
+			</div>
+			
+
+		<!-- Far bottom footer wrapper ends -->		
+		</div>
+		
+		
+		<!-- This script enables the PrettyPhoto lightbox to activate when clicking on an image with the class 'pretyPhoto'. -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("a[class^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
+		
+		
+	</body>
+	
+	
+</html>

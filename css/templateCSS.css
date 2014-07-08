@@ -1,0 +1,436 @@
+/* Import Hamburger-Heaven font styles from the font folder. */
+@font-face{
+	font-family: Hamburger-Heaven; 
+    src: url('../fonts/HAMBH___-webfont.eot');
+    src: url('../fonts/HAMBH___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HAMBH___-webfont.woff') format('woff'),
+         url('../fonts/HAMBH___-webfont.ttf') format('truetype'),
+         url('../fonts/HAMBH___-webfont.svg#Hamburger-Heaven') format('svg');
+}
+
+
+
+/* An image has been used for the background because of rendering issues with radial-gradients in Firefox. */
+body{
+	height: auto;
+	background-color:#a8d4e1;
+	background-image:url(../images/bg.png);
+}
+
+/* A wrapper class has been created to enable the contents placed within it to be center aligned. */
+.wrapper{
+	max-width: 1000px;
+	min-width: 660px;
+	margin: 0px auto;
+	position: relative;
+}
+
+header#page_header{
+	margin: 0px 40px;
+}
+
+header#page_header:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+/* Making the logo absolute enables it to be placed slightly outside the wrapper class, whilst it still being contained inside the wrapper. */
+img#logo{
+	width: 260px;
+	height: 200px;
+	position: absolute;
+	top: -50px;
+	left: -10px;
+}
+
+hgroup{
+	margin: 50px 0px 15px 0px;
+}
+
+h1#main_heading{
+	color: #292421;
+	font: 120px Hamburger-Heaven;
+	text-align: center;
+	text-shadow: 0px 3px 10px rgba(150, 150, 150, 1);
+}
+
+h2#sub_heading{
+	color: #3c2f36;
+	font: bold 18px Arial;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+div#search_container{
+	position: relative;
+	float: right;
+}
+
+/* The flower image is set to position absolute which enables it to overlap the search button. */
+#flower{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: -60px;
+	right: 40px;
+}
+
+#search_button{
+	padding: 10px 5px;
+	background: #363231;
+	color: #ffffff;
+	font: bold 15px Arial;
+	text-decoration: none;
+	-webkit-border-radius: 0px 0px 10px 0px;
+	-moz-border-radius: 0px 0px 10px 0px;
+	border-radius: 0px 0px 10px 0px;
+}
+
+#search_box{
+	width: 180px;
+	height: 25px;
+	padding: 5px;
+	font-size: 12px;
+	border: 2px solid #67999a;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+
+div#header_contacts{
+	padding-top: 20px;
+	font: 16px Calibri;
+	letter-spacing: 1px;
+	float: left;
+}
+
+p#header_tel{
+	padding-right: 5px;
+	display: inline-block;
+	border-right: 1px solid #000;
+}
+
+p#header_email{
+	padding-left: 5px;
+	display: inline-block;
+}
+
+/* A hover class stlye which can be implemented on links which require the same styling. */
+.hover{
+	color: #aa4235;
+	text-decoration: none;
+}
+
+.hover:hover{
+	text-decoration: underline;
+}
+
+nav{
+	margin-top:80px;
+	border-top: 1px dashed #000;
+	border-bottom: 1px dashed #000;
+}
+
+nav ul{
+	background: #649AA4;
+	position: relative;
+	list-style: none;	
+	text-align: center; 
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li:hover{
+	background: #4E7880;
+}
+
+nav ul li.dropdown:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+nav ul li a{
+	padding: 15px;
+	display: block;
+	color: #000000;
+	font: bold 14px Arial;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* Changes the background of the anchor tag which has the id of current_page. This is used to show the user which page they are on. */
+nav ul li a#current_page{
+	background: #D5DBE7;
+}
+
+nav ul li > ul{
+	padding: 0px;
+	background: #649AA4;
+	position: absolute;
+	opacity: 0;
+	visibility:hidden;
+}
+
+nav ul li:hover > ul{
+	opacity: 1;
+	visibility: visible;
+	-webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+	-webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+nav ul ul li{
+	display: block;
+}
+
+nav ul ul li a{
+	color: #000000;
+}
+
+nav ul ul li a:hover {
+	background: #D5DBE7;
+	-webkit-box-shadow: inset 0px 0px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: inset 0px 0px 10px rgba(50, 50, 50, 0.75);
+	box-shadow: inset 0px 0px 10px rgba(50, 50, 50, 0.75);
+	-webkit-transition: background 1s;
+    -moz-transition: background 1s;
+	transition: background 1s;
+}
+
+/* Creates a pointing-down triangle by making the left and the right borders transparent and only showing the top border. Border-left, and 
+	border-right determines the size of the triangle. */   
+span.triangle{
+	margin-left:20px;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+	float:right;
+}
+
+div#breadcrumbs{
+	margin: 40px;
+	font: 16px Calibri;
+}
+
+div#breadcrumbs > a:last-child{
+	color: #aa4235;
+}
+
+
+
+h3#page_heading{
+	margin: 0px 40px;
+	font: 600 20px Arial;
+	letter-spacing: 1px;
+	text-shadow: 0px 1px 1.5px #525252;
+}
+
+
+
+/* Footer styles start here. */
+
+/* By not having the footer inside a wrapper class enables its width to be stretched 100% of the screen's resolution. */
+body > footer{
+	min-width: 660px;
+	max-width: 100%;
+	height: auto;
+	background: #ffffff;
+	position: relative;
+	border-top: 4px solid #4373A7;
+	border-bottom: 4px solid #4373A7;
+}
+
+/* The stripes are created by using a linear gradient - making 50% of it transparent, 3% solid blue, and the other 47% transparent. 
+	This only leaves the 3% diagonal line visible - which is what the user sees. */
+div.stripes{
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	background-size: 10px 10px;
+	
+	background-image: -webkit-linear-gradient(-45deg,
+										 rgba(0,0,0,0)49%,
+										 rgba(23, 136, 207, 1) 50%,
+										 rgba(0, 0, 0, 0) 53%);
+										 
+	background-image: -moz-linear-gradient(-45deg,
+										 rgba(0,0,0,0)49%,
+										 rgba(23, 136, 207, 1) 50%,
+										 rgba(0, 0, 0, 0) 57%);
+										 
+	background-image: linear-gradient(-45deg,
+										 rgba(0,0,0,0)49%,
+										 rgba(23, 136, 207, 1) 50%,
+										 rgba(0, 0, 0, 0) 57%);		
+									 
+}
+
+/* Position the stripes above the top border. */
+div#topOver{
+	top: -13px;
+}
+
+/* Position the stripes under the top border. */
+div#topUnder{
+	right: 3px;
+}
+
+section.footer_content{
+	width: 230px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* This style allows the footer-blog to be indented from the left by 90px. */
+section#footer_blog{
+	margin-left: 90px;
+}
+
+h5.footer_content_heading{
+	margin: 30px auto 15px auto;
+	padding-bottom: 10px;
+	font: 17px Hamburger-Heaven;
+	text-align: center;
+	border-bottom: 1px dotted #000;
+}
+
+/* The rssincl classes are embeded into the webpage from a RSS reader website. */
+p.rssincl-itemtitle > a{
+	color: #aa4235;
+	font: 15px Calibri;
+	text-decoration: none;
+}
+
+p.rssincl-itemtitle:hover{
+	text-decoration: underline;
+}
+
+p.rssincl-itemdesc{
+	margin-bottom: 20px;
+	font: 13px Calibri;
+	line-height: 17px;
+}
+
+section.footer_content > p#text{
+	font: 15px Calibri;
+	margin-bottom: 20px;
+}
+
+/* Gives footer-social 50px margin on left and right side so that it is equal distence from the other two footer contents. */
+section#footer_social{
+	margin: 0px 50px;
+}
+
+img.social-img{
+	width: 25px;
+	height: 25px;
+}
+
+img.social-img:hover{
+	width: 40px;
+	height: 40px;
+	-webkit-transition: width, height, .5s;
+    -moz-transition: width 0.5s, height 0.5s; 
+	transition: width, height, .5s;
+}
+
+section#footer_trip{
+	width: 300px;
+	height: auto;
+	display: inline-block;
+}
+
+/* A shadow effect is created on these images by reducing the box-shadow's spread property so that it narrows down and then positions the shadow underneath the image. */
+img.trip-img{
+	width: 120px;
+	height: 70px;
+	margin: 0px 0px 20px 15px;
+	display: inline-block;
+    -webkit-box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 1);
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 1);
+}
+
+img.trip-img:hover{
+	width: 130px;
+	height: 80px;
+    -webkit-box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 1);
+    box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 1);
+	-webkit-transition: box-shadow, width, height, .5s;
+    -moz-transition: box-shadow 0.5s, width 0.5s, height 0.5s; 
+	transition: box-shadow, width, height, .5s;
+}
+
+div#bottomOver{
+	bottom: 0px;
+}
+
+div#bottomUnder{
+	bottom: -13px;
+	right: 3px;
+}
+
+
+/* The far bottom footer style start here. */
+
+div#credits{
+	margin: 60px 40px 20px 40px;
+	position: relative;
+}
+
+p.credits_text{
+	display: inline-block;
+	font: 12px Arial;
+}
+
+div#credits > p.credits_text:nth-child(2){
+	margin-right: 90px;
+	display: inline-block;
+	float: right;
+}
+
+/* The backtotop anchor has been set to position absolute so that the text next to it can be middle aligned. */
+a#back-to-top{
+	padding: 15px 20px 15px 20px;
+	background: #272727;
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: -20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+a#back-to-top > img{
+	width: 20px;
+	height: 20px;
+}
+
+
+/* HTML image of the News page and the assignment report. */
+
+div#htmlOutline_report{
+	font: 15px Arial;
+	margin: 0px 40px 20px 40px;
+}
+
+a#html_outline{
+	margin-right:5px;
+	padding-right:10px;
+	border-right: 1px solid #000000;
+}
+
+a#report{
+	margin-right:5px;
+	padding:0px 10px 0px 10px;
+	border-right: 1px solid #000000;
+}

@@ -1,0 +1,180 @@
+/* This will set Sam Boyd's trip images in a group of four when min-width is 910px and max-width is 999px. */
+@media screen and (min-width:910px) and (max-width:999px){
+	
+	section#footer_social{
+		margin: 0px 20px;
+	}
+	
+ 	section#footer_trip{
+		width:300px;
+		margin:0px;
+	}
+}
+
+
+/* These are the styles which will be applied when the browser size reaches 999px, one pixel less than the maximum content width set on the wrapper. */
+@media screen and (max-width: 999px){
+
+/* These are the styles for the header of the page. */
+
+	img#logo{
+		display:none;
+	}
+
+	hgroup{
+		margin-bottom:40px;
+	}
+
+	div#search_container{
+		margin-top:15px;
+	}
+
+	p#header_tel{
+		display:block;
+		border-right:none;
+	}
+
+	p#header_email{
+		display:block;
+	}
+	
+	nav{
+		margin-top:120px;
+	}
+	
+	
+	/* The following styles are for the main contents of About Sam page. For the fluid layout on this page, I wanted to center align all elements 
+		and place them in their own blocks, one after the other. */
+
+	div#top_contents_container{
+		height:auto;
+	}
+	
+	div#profiles{
+		padding-top:20px;
+		margin:0px 40px 0px 40px;
+		float:none;
+	}	
+	
+	article#sam_profile_container{
+		width:100%;
+		margin:0px auto;
+		padding:0px;
+		float:none;
+	}
+	
+	/* Increase the size of the image since there is much more space now. */
+	img#sam-img, img#tom-img{
+		width:280px;
+		height:250px;
+		margin:0px auto;
+		display:block;
+	}
+	
+	img#sam-img:hover, img#tom-img:hover{
+		margin: 7px auto;
+	}
+	
+	h4.profile_title{
+		font-size:40px;
+	}
+	
+	/* Set the description to 100% width so that it has space to widen 100%. */ 
+	p.description{
+		width:100%;
+		margin:10px 0px 20px 0px;
+		display:block;
+	}
+	
+	article#tom_profile_container{
+		width:100%;
+		margin-top:2px;
+		padding:10px 0px;
+		float:none;	
+		border-bottom: 1px solid #9499A3;
+		border-top: 1px solid #9499A3;
+	}
+
+	/* The following styles are used to style the Surf Lessons content of the webpage. */
+	
+	div#surf_academy_container{
+		width:100%;
+		margin:0px;
+		padding:0px;
+	}
+	
+	section#surf_academy{
+		margin: 2px 40px 0px 40px;
+		border-bottom: 1px solid #9499A3;		
+	}
+	
+	p.academy_description{
+		margin:10px auto;
+		display:block;
+	}
+	
+	img.academy-img{
+		margin:10px auto;
+		display:block;
+	}
+	
+	img.academy-img:hover{
+		margin: 15px auto;
+	}
+	
+	
+	/* The following styles are used to style the Surf Tutors content of the webpage. */
+	
+	div#tutor_container{
+		margin:2px 40px 0px 40px;
+		padding:0px 0px;
+		border-bottom: 1px solid #9499A3;
+		border-top: 1px solid #9499A3;
+	}
+	
+	/* Narrow down the width of the container for the tutor images so that the images group together in a four. */	
+	section#tutor_profiles{
+		width:500px;
+		margin:0px auto;
+		border: none;
+	}
+	
+	/* Increase the size of the tutor images. */
+	img.tutor-img{
+		width:200px;
+		height:170px;
+	}
+	
+	img.tutor-img:hover{
+		width:210px;
+		height:180px;
+	}
+	
+	
+	/* The following styles are for the footer of Sam Boyd's Contact page. */
+	
+	div#footer_container{
+		width:200px;
+		margin:0px auto;
+	}
+
+	section#footer_blog{
+		margin-left: 40px;
+	}
+
+	section#footer_social{
+		margin-left: 90px;
+	}
+	
+	/* This will make Sam Boyd's Trip images form in a line next to each other. */
+	section#footer_trip{
+		width: auto;
+		margin:-20px 0px 20px 40px;
+	}
+	
+	img.trip-img:hover{
+		margin-bottom:10px;
+	}
+	
+/* End of media: max-width: 999px */	
+}

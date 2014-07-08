@@ -1,0 +1,138 @@
+/*This will set Sam Boyd's trip images in a group of four when min-width is 910px and max-width is 999px. */
+@media screen and (min-width:910px) and (max-width:999px){
+	
+	section#footer_social{
+		margin: 0px 20px;
+	}
+	
+ 	section#footer_trip{
+		width:300px;
+		margin:0px;
+	}
+}
+
+
+/* These are the styles which will be applied when the browser size reaches 999px, one pixel less than the maximum content width set on the wrapper. */
+@media screen and (max-width: 999px){
+
+	/* These are the styles for the header of the page. */
+
+	img#logo{
+		display:none;
+	}
+
+	hgroup{
+		margin-bottom:40px;
+	}
+
+	div#search_container{
+		margin-top:15px;
+	}
+
+	p#header_tel{
+		display:block;
+		border-right:none;
+	}
+
+	p#header_email{
+		display:block;
+	}
+	
+	nav{
+		margin-top:120px;
+	}
+	
+	
+	
+	/* The following styles are for the main content of Sam Boyd's Contact page. */
+	
+	/* Set the width of the address_container to 100% so that the vcard inside it can center align. */
+	section#address_container{
+		width:100%;
+		padding-bottom:20px;
+		margin-bottom:2px;
+		display:block;
+		border-bottom: 1px solid #9499A3;
+	}
+	
+	h4.heading{
+		font-size:35px;
+	}
+	
+	div.vcard{
+		margin:0px auto;
+	}
+	
+	h4#contact_container_title{
+		width:260px;
+	}
+	
+	/* Set the width of the form_container to 100% so that the user_form inside it can center align. */
+	section#form_container{
+		width:100%;
+		padding-top:2px;
+		display:block;
+		border-top: 1px solid #9499A3;
+	}
+	
+	form#user_form{
+		margin:0px auto;
+	}
+	
+	
+	
+	/* The following styles are for the Visit Us section of this webpage. */
+	
+	h4#find_us_title{
+		width:120px;
+		display:block;
+		font-size:35px;
+	}
+	
+	/* Set the width of the map_info_container to 100% so that the opening_times inside it can center align. */
+	div#map_info_container{
+		width:100%;
+		padding-bottom:20px;
+	}
+	
+	div#opening_times{
+		width:250px;
+		margin:0px auto;
+	}
+	
+	/* I wanted to set the width of the map to 100% so that the map could widen and narrow down depending on the browser size. */
+	iframe#map{
+		width:100%;
+		height:300px;
+		margin:0px auto;
+		border:1px solid #000;
+	}
+		
+		
+	/* The following styles are for the footer of Sam Boyd's Contact page. */
+	
+	div#footer_container{
+		width:200px;
+		margin:0px auto;
+	}
+
+	section#footer_blog{
+		margin-left: 40px;
+	}
+
+	section#footer_social{
+		margin-left: 90px;
+	}
+	
+	/* This will make Sam Boyd's Trip images form in a line next to each other. */
+	section#footer_trip{
+		width: auto;
+		margin:-20px 0px 20px 40px;
+	}
+	
+	img.trip-img:hover{
+		margin-bottom:10px;
+	}
+	
+/* End of media: max-width: 999px */
+}
